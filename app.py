@@ -17,7 +17,7 @@ def login():
                 cur = con.cursor()
                 try:
                     sqlite_insert_query = """SELECT * from students where 
-                    name='""" + nm +  """' and pwd='""" + pwd + """'"""
+                    name='""" + nm +  """' and pwd='""" + pwd + """'""" # checks every row that is matched with nm and pwd
                     cur.execute(sqlite_insert_query)
                     records = cur.fetchall()
                     if (len(records) >= 1):
