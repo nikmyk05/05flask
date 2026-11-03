@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{{url_for('addrec')}}" method="POST">
+        <h3>Student information</h3>
+        Name<br>
+        <input type="text" name="nm"><br> <!-- Added password input field when creating new user -->
+        Password<br>
+        <input type="text" name="pwd"><br>
+        Address<br>
+        <textarea type="text" name="add"></textarea><br>
+        City<br>
+        <input type="text" name="city" id=""><br>
+        Pincode<br>
+        <input type="text" name="pin" id=""><br>
+        <input type="submit" value="submit"><br>
+    </form>
+    
+</body>
+</html>
